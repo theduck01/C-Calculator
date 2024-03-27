@@ -7,6 +7,7 @@ float div();
 float slope();
 float ctf();
 float ftc();
+int quit();
 
 int main() {
     int programslct;
@@ -20,6 +21,7 @@ int main() {
     printf("5. Slope\n");
     printf("6. Celsius to Fahrenheit\n");
     printf("7. Fahrenheit to Celsius\n");
+    printf("8. Quit\n");
     scanf("%i", &programslct);
     if (programslct == 1)
 {
@@ -44,6 +46,9 @@ else if (programslct == 6) {
 else if (programslct == 7) {
     ftc();
 }
+else if (programslct == 8) {
+    quit();
+}
 
 }
 float add() {
@@ -56,7 +61,7 @@ float add() {
     scanf("%f", &add2);
     addsum = add1 + add2;
     printf("Your answer is: %f\n", addsum);
-    return 0;
+    main();
 }
 
 float sub() {
@@ -69,7 +74,7 @@ float sub() {
     scanf("%f", &sub2);
     subsum = sub1 - sub2;
     printf("Your answer is: %f\n", subsum);
-    return 0;
+    main();
 }
 
 float mult() {
@@ -82,7 +87,7 @@ float mult() {
     scanf("%f", &mult2);
     multsum = mult1 * mult2;
     printf("Your answer is: %f\n", multsum);
-    return 0;
+    main();
 }
 
 float div() {
@@ -95,7 +100,7 @@ float div() {
     scanf("%f", &div2);
     divsum = div1 / div2;
     printf("Your answer is: %f\n", divsum);
-    return 0;
+    main();
 }
 
 float slope() {
@@ -114,7 +119,7 @@ float slope() {
     scanf("%f", &x1);
     slopeanswer = y2 - y1 / x2 - x1;
     printf("Your Answer is :%f\n", slopeanswer);
-    return 0;
+    main();
 }
 
 float ctf() {
@@ -126,8 +131,9 @@ float ctf() {
     
     ctfanswer = (inputctf * 9/5) + 32;
 
-    printf("Your Temperature in Fahrenheit is:\n");
-    return 0;
+    printf("Your Temperature in Fahrenheit is: ");
+    printf("%f", ctfanswer);
+    main();
 }
 
 float ftc() {
@@ -139,6 +145,11 @@ float ftc() {
     
     ftcanswer = (inputftc - 32) * 5/9;
 
-    printf("Your Temperature in Celsius is:\n");
+    printf("Your Temperature in Celsius is: ");
+    printf("%f", ftcanswer);
+    main();
+}
+
+int quit() {
     return 0;
 }
