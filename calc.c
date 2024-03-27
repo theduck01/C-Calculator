@@ -132,7 +132,7 @@ float ctf() {
     ctfanswer = (inputctf * 9/5) + 32;
 
     printf("Your Temperature in Fahrenheit is: ");
-    printf("%f", ctfanswer);
+    printf("%f\n", ctfanswer);
     main();
 }
 
@@ -146,7 +146,7 @@ float ftc() {
     ftcanswer = (inputftc - 32) * 5/9;
 
     printf("Your Temperature in Celsius is: ");
-    printf("%f", ftcanswer);
+    printf("%f\n", ftcanswer);
     main();
 }
 
