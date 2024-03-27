@@ -113,30 +113,32 @@ float slope() {
     printf("what is x1:\n");
     scanf("%f", &x1);
     slopeanswer = y2 - y1 / x2 - x1;
-
     printf("Your Answer is :%f\n", slopeanswer);
+    return 0;
 }
 
 float ctf() {
     float inputctf;
     float ctfanswer;
 
-    printf("Enter Your Temperature in Celsius:");
+    printf("Enter Your Temperature in Celsius:\n");
     scanf("%f", &inputctf);
     
     ctfanswer = (inputctf * 9/5) + 32;
 
-    printf("Your Temperature in Fahrenheit is:");
+    printf("Your Temperature in Fahrenheit is:\n");
+    return 0;
 }
 
 float ftc() {
     float inputftc;
     float ftcanswer;
 
-    printf("Enter Your Temperature in Fahrenheit:");
+    printf("Enter Your Temperature in Fahrenheit:\n");
     scanf("%f", &inputftc);
     
     ftcanswer = (inputftc - 32) * 5/9;
 
-    printf("Your Temperature in Celsius is:");
+    printf("Your Temperature in Celsius is:\n");
+    return 0;
 }
